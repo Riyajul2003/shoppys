@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: rgb(212, 211, 211);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 10000;
+}
+.logo{
+    margin-left: 13px;
+    font-size: 20px;
+    color: white;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 13px;
+}
+nav ul li{
+    list-style: none;
+
+}
+ul li a{
+    text-decoration: none;
+    margin-inline: 20px;
+    color: white;
+    font-size: 20px;
+   
+}
+ul li a:hover, ul li a.active{
+    color: rgb(73, 177, 181);
+    font-weight: 900;
+}
+.icon{
+    display: none;
+    color: white;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+}
+.main{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;  
+}
+.mainText button{
+    margin-top: 69px;
+    font-size: 34px;
+    padding: 12px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 9px;
+    color: white;
+}
+.mainText{
+  
+    margin-top: 144px;
+    margin-left: 78px;
+    margin-bottom: 124px;
+
+}
+.mainText h1{
+    color: blue;
+    font-size: 55px;
+    font-family: monospace;
+
+}
+.mainText h2{
+    font-size: 47px;
+    margin-bottom: 36px;
+    color: crimson;
+    font-family: serif;
+}
+.mainText p{
+    font-size: 19px;
+    margin-top: 20px;
+    font-family: sans-serif;
+
+}
+.main img{
+    width:800px;
+    top: 0;
+    
+
+}
+.shop{
+  width: 100%;
+ 
+}
+.head h1{
+    text-align: center;
+    background-color: #f0f8ff8f;
+    font-size: 42px;
+    letter-spacing: 9px;
+}
+.head span{
+    color: rgb(4, 180, 180);
+    font-weight: 800;
+    
+}
+.shop .cards{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+
+}
+.cards .crd{
+    margin: 44px 60px 75px;
+}
+.cards .crd h3{
+    font-size: 25px;
+    margin: 0 0  8px 0;
+}
+.cards .crd .fa-star{
+    color: goldenrod;
+    margin: 0 0  8px 0;
+}
+.card-cus .rcard img{
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+  
+}
+.card-cus{
+    margin: 25px 50px 25px;
+}
+.head{
+    padding: 55px;
+}
+.card-cus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.card-cus .rcard{
+    width: 270px;
+    height: 300px;
+    background-color: #fcf9f9;
+    text-align: center;
+    padding: 13px;
+    margin-inline: 20px;
+}
+.rcard button{
+    width: 90px;
+    height: 30px;
+    background-color: aqua;
+    color: white;
+    border: none;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.rcard:hover{
+    background-color: #7259cc;
+    color: white;
+    transition: 1s ease;
+    cursor: pointer;
+}
+.shop .cards .crd img{
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+    position: relative;
+
+}
+.shop .cards .crd img:hover{
+    box-shadow: (rgb(4, 180, 180),rgb(15, 15, 15));
+}
+.customer .card-cus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog .blogcard{
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin-inline: 22px;
+    padding: 22px;
+    border-radius: 8px;
+}
+.blog .blogcard img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+.blogcard p{
+    margin: 15px 0;
+}
+.blogcard a{
+    padding: 4px 20px;
+    background-color: aqua;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+.blogcard:hover{
+    background-color: gray;
+    transition: 1s ease;
+    cursor: pointer;
+}
+.connect{
+    text-align: center;
+
+}
+.connect input{
+    width: 380px;
+    padding: 11px;
+    font-size: 18px;
+    background-color:transparent;
+    margin-top: 11px;
+    border: 2px solid black;
+
+}
+.connect button{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(8, 125, 125);
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 22px;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    padding: 44px;
+    color: white;
+    margin-top: 35px;
+
+}
+.footer .text h2{
+    color: rgb(161, 152, 122);
+}
+.footer p{
+    margin: 15px;
+}
+
+/*item page css*/
+.itempage{
+display: none;
+margin-top: 33px;
+margin-left: 25px;
+}
+.itempage img{
+    width: 400px;
+
+}
+
+.itempage .itemtext{
+    margin-inline: 24px;
+    
+}
+.itemtext h2{
+    color: rgb(32, 166, 5);
+}
+.itemtext input{
+    width: 40px;
+    padding: 6px;
+    font-size: 18px;
+}
+.itemtext a{
+    padding: 4px 20px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+}
+.buypage{
+    display: none;
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 11%;
+
+}
+.buytext input{
+    width: 90%;
+    padding: 7px;
+    border: 2px solid black;
+    margin-top: 8px;
+
+}
+.buypage .cross .fa{
+    background-color: gray;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+
+}
+.buytext button{
+    width: 120px;
+    height: 30px;
+    background-color: cadetblue;
+    margin-top: 18px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.buytext select{
+    padding: 4px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width:600px) {
+
+   nav ul{
+            display: none;
+    }
+    .icon{
+        display: flex;
+        cursor: pointer;
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 58px;
+        background-color: rgb(94, 92, 92);
+        width: 100%;
+        height: 240px;
+        gap: 20px;
+        padding: 0%;
+
+
+    }
+    
+
+}
+
+@media only screen and (max-width:1000px){
+    .main img{
+        width: 95%;
+    }
+    .crd img{
+        margin-left: 80px;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width:1000px) {
+    .main{
+        display: block;
+        text-align: center;
+    }
+
+}
+
